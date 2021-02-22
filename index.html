@@ -168,11 +168,30 @@
         transform: rotate(360deg);
       }
     }
+    /* Beautiful navbar */
+    @keyframes ants { 
+      from {
+        background-position: 0% 0%;
+      }
+      to { 
+        background-position: 100% 600%;
+      } 
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+      animation: ants 12s linear infinite;
+    }
+
+
   </style>
 </head>
 <body>
   <header>
-   <div style="background-image: url('https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/58/58ca885c4d265d08a018ef004ec0e6425f76b1de_full.jpg');">
+   <div class="navbar" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/58/58ca885c4d265d08a018ef004ec0e6425f76b1de_full.jpg');">
     <h2>The legendary founder of <b>Bridge Esports</b>™️ has entered the interconnected web of pipes!</b></h2>
 
 
